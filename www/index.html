@@ -16,71 +16,75 @@
     <title>Arthur</title>
 </head>
 
-<header style="background-color: #FFCB47;">
-        <ul class="nav flex-column navList">
-                <li class="nav-item">
-                    <a class="nav-link active" style="padding:0" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="padding:0" href="#">WORK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="padding:0" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="padding:0" href="#" tabindex="-1" aria-disabled="true">CONTACT</a>
-                </li>
+<header class="landing" id="landing" style="background-color: #FFCB47;">
+    <div id="myNav" class="overlay">
+        <h1 href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</h1>
+        <ul class="nav flex-column navList overlay-content">
+            <li class="nav-item">
+                <a class="nav-link landingLink active" onclick="closeNav()" style="padding:0" href="#landing">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link workLink" onclick="closeNav()" style="padding:0" href="#work">WORK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link aboutLink" onclick="closeNav()" style="padding:0" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contactLink" onclick="closeNav()" style="padding:0" href="#contact" tabindex="-1" aria-disabled="true">CONTACT</a>
+            </li>
         </ul>
-    <img src="assets/me.svg" class="landingText im animated fadeInDown" style="animation-delay: 0.15s;">
-    <img src="assets/arthur.svg" class="landingText arthur animated fadeInDown" style="animation-delay: 0s;">
-    <img class="outline animated fadeInUp" src="assets/meWake.svg" alt="image of me wakeboarding">
-    <h1 class="landingText  what animated fadeInDown" style="animation-delay: 0s;">(I'm a web developer <br>and designer)</h1>
+    </div>
 
+    <img src ="assets/burger.svg" class="phoneMenu" onclick="openNav()" style="z-index:1">
+    <img src="assets/me.png" class="landingText im animated fadeInDown" style="animation-delay: 0.15s;">
+    <img src="assets/arthur.png" class="landingText arthur animated fadeInDown" style="animation-delay: 0s;">
+    <img class="outline animated fadeInUp" src="assets/meWake.svg" alt="image of me wakeboarding">
+    <h1 class="landingText  what animated fadeInDown" style="animation-delay: 0s;">(Full stack developer <br> and designer)</h1>
+    <img src="assets/arrow.svg" style="transform: rotate(90deg)" class="animated infinite bounce arrow">
 </header>  
 
 <body>
-
-    <div class="container-fluid" style="background-color: #53B3CB;">
+    <div class="container-fluid work" id="work" style="background-color: #53B3CB;">
         <div class="row justify-content-center prevWork">
             <div class="col-12">
-                <img class="workTitle" src="assets/work.svg" alt="previous work 3d text">
+                <img class="workTitle" src="assets/work.png" alt="previous work 3d text">
             </div>
 
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 projectList">
-                <a href=""><h1 class="projectItem">Yogun</h1></a>
-                <img class="yogunPhoto" src="assets/yogunScreenshot.png" alt="yogurt website screenshot">
-                <a href=""><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
+                <a href="https://arthurverrept.github.io/Yogun/indexYogun.html" target="_blank"><h1 class="projectItem">Yogun</h1></a>
+                <a href="https://arthurverrept.github.io/Yogun/indexYogun.html" target="_blank"><img class="yogunPhoto" src="assets/yogun.jpg" alt="yogurt website screenshot"></a>
+                <a href="https://github.com/ArthurVerrept/INDE511" target="_blank"><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 projectList">
-                <a href=""><h1 class="projectItem">Yogun</h1></a>
-                <img class="yogunPhoto" src="assets/yogunScreenshot.png" alt="yogurt website screenshot">
-                <a href=""><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
+                <a href="https://arthurverrept.com" target="_blank"><h1 class="projectItem">New Portfolio</h1></a>
+                <a href="https://arthurverrept.com" target="_blank"><img class="yogunPhoto" src="assets/newPortfolio.jpg" alt="yogurt website screenshot"></a>
+                <a href="https://github.com/ArthurVerrept/Portfolio" target="_blank"><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 projectList">
-                <a href=""><h1 class="projectItem">Yogun</h1></a>
-                <img class="yogunPhoto" src="assets/yogunScreenshot.png" alt="yogurt website screenshot">
-                <a href=""><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
+                <a href="https://arthurverrept.github.io/Portfolio/index.html" target="_blank"><h1 class="projectItem">Old Portfolio</h1></a>
+                <a href="https://arthurverrept.github.io/Portfolio/index.html" target="_blank"><img class="yogunPhoto" src="assets/portfolioOld.jpg" alt="yogurt website screenshot"></a>
+                <a href="https://github.com/ArthurVerrept/INDE404" target="_blank"><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
             </div>
 
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 projectList">
-                <a href=""><h1 class="projectItem">Yogun</h1></a>
-                <img class="yogunPhoto" src="assets/yogunScreenshot.png" alt="yogurt website screenshot">
-                <a href=""><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
+                <a href="https://xd.adobe.com/view/4f7c1b0e-a06a-45fb-4a0a-8c26c50d8a95-394d/" target="_blank"><h1 class="projectItem">Pet App Design</h1></a>
+                <a href="https://xd.adobe.com/view/4f7c1b0e-a06a-45fb-4a0a-8c26c50d8a95-394d/" target="_blank"><img class="yogunPhoto" src="assets/petApp.jpg" alt="yogurt website screenshot"></a>
+                <a href=""><img class="githubLink" src="" alt=""></a>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 projectList">
-                <a href=""><h1 class="projectItem">Yogun</h1></a>
-                <img class="yogunPhoto" src="assets/yogunScreenshot.png" alt="yogurt website screenshot">
-                <a href=""><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
+                <a href="https://github.com/ArthurVerrept/arthurverrept.github.io/blob/master/FINAL%20DOUBLE.pdf" target="_blank"><h1 class="projectItem">Book Redesign</h1></a>
+                <a href="https://github.com/ArthurVerrept/arthurverrept.github.io/blob/master/FINAL%20DOUBLE.pdf" target="_blank"><img class="yogunPhoto" src="assets/Book.jpg" alt="yogurt website screenshot"></a>
+                <a href=""><img class="githubLink" src="" alt=""></a>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 projectList">
-                <a href=""><h1 class="projectItem">Yogun</h1></a>
-                <img class="yogunPhoto" src="assets/yogunScreenshot.png" alt="yogurt website screenshot">
-                <a href=""><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
+                <a href="https://arthurverrept.github.io/index1.html" target="_blank"><h1 class="projectItem">First JS Project</h1></a>
+                <a href="https://arthurverrept.github.io/index1.html" target="_blank"><img class="yogunPhoto" src="assets/Project1.jpg" alt="yogurt website screenshot"></a>
+                <a href="https://github.com/ArthurVerrept/DAT405" target="_blank"><img class="githubLink" src="assets/viewCode.svg" alt="github link"></a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid about" style="background-color: #F79D84;">
+    <div class="container-fluid about" id="about" style="background-color: #F79D84;">
         <div class="row">
             <div class="col-12">
                 <h1 class="blah1">Blah</h1>
@@ -88,17 +92,17 @@
                 <h1 class="blah3">Blah</h1>
                 <h1 class="blah4">Blah...</h1>
                 <h3 class="aboutInfoTitle">Who Cares?</h3>
-                <p class="aboutInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus turpis at sapien aliquet varius. Morbi vel ex augue. Ut egestas quis ante vel facilisis. Cras consequat risus nec efficitur mollis. Duis sed varius mauris, id laoreet sapien. Mauris eu tempor risus. Nulla facilisi. Donec eleifend venenatis ligula efficitur consequat. Ut at sapien sit amet purus mattis consequat. Sed rutrum porttitor est, ac sagittis urna lobortis ut. Donec consequat orci eget odio vestibulum, id convallis tortor sodales. Maecenas elementum nulla et mollis semper.</p>
+                <p class="aboutInfo">What do I enjoy doing, well, anything to do with the water really, I spend most summers wakeboarding 80% of the time and surfing the rest, where as winters they swap around. Other than that I enjoy music production (although I am really not very good at it) it really helps me keep my creative side alive and I love the possibilites for making a new song from scratch ev erytime I want to. Video editing is another pass time of mine, having done it from and early age I feel comfortable with the editing software and really enjoy the process of expressing my perspective and experiences through videos.</p>
             </div>
         </div>
     </div>
 
 
-    <div class="container-fluid about" style="background-color: #EC7357;">
+    <div class="container-fluid contact" id="contact" style="background-color: #EC7357;">
         <div class="row">
-            <div class="col-xl-6 col-12 ">
+            <div class="col-xl-6 col-md-9 col-lg-9 col-12 ">
                 <h1 class="formTitle">I would love to hear
-                    From you!</h1>
+                    from you!</h1>
             </div>
         </div>
 
@@ -135,8 +139,8 @@
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-4 leftDiv justify-content-center">
             <p class="left">Socials</p>
-            <img class="leftSoc" src="assets/twitter.svg" alt="twitter icon">
-            <img class="leftSoc" src="assets/instagram.svg" alt="twitter icon">
+            <a href="https://twitter.com/BaguetteVerrept"><img class="leftSoc" src="assets/twitter.svg" alt="twitter icon"></a>
+            <a href="https://www.instagram.com/arthurverreptdev/"><img class="leftSoc" src="assets/instagram.svg" alt="twitter icon"></a>
         </div>
 
         <div class="col-xl-4 col-lg-4 col-md-4">
@@ -147,7 +151,7 @@
 
         <div class="col-xl-4 col-lg-4 col-md-4">
                 <p class="right">Download My CV</p>
-                <img class="right down" src="assets/download.svg" alt="twitter icon">
+                <a href="assets/CV.docx" download><img class="right down" src="assets/download.svg" alt="twitter icon"></a>
         </div>
     </div>
 

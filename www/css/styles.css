@@ -1,5 +1,24 @@
 html, body{
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.arrow{
+  position: absolute;
+  width:10px;
+  bottom:5vh;
+}
+
+.phoneMenu{
+  background-color: rgb(240, 175, 12);
+  padding: 15px;
+/* padding-right: 10px; */
+  border-radius: 5px;
+}
+
+
+.phoneMenu, .closebtn{
+  display:none;
 }
 
 header{
@@ -38,7 +57,7 @@ li{
 }
 
 .active{
-  color:black;
+  color:black !important;
 }
 
 .landingText{
@@ -142,7 +161,7 @@ h1[class^="blah"]{
   text-align: center;
   color:#FAF2A1;
   margin-bottom:20px;
-  font-size: 50px !important;
+  font-size: 30px !important;
 }
 
 .projectItem:hover{
@@ -395,6 +414,72 @@ h1[class^="blah"]{
     font-size:9vw !important;
     margin-bottom:15px;
   }
+
+
+  .phoneMenu, .closebtn{
+    display:block;
+    position: fixed;
+    top:3vw;
+    right:5vw;
+    font-size:10vw;
+    color:white;
+  }
+
+  .closebtn{
+    color:white;
+  }
+
+    /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    margin-top:8vh;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+  }
+
+  .nav-link{
+    font-size:10vw !important;
+  }
+
+  .active{
+    color:grey !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -432,7 +517,7 @@ h1[class^="blah"]{
   }
 
   .projectItem{
-    font-size: 6vw !important;
+    font-size: 3.4vw !important;
     margin-bottom:15px;
   }
 
@@ -482,6 +567,73 @@ h1[class^="blah"]{
   .messageForm{
     width:89%;
     margin-left:5%;
+  }
+  .phoneMenu, .closebtn{
+    display:block;
+    position: fixed;
+    top:1vw;
+    right:2vw;
+    font-size:6vw;
+  }
+
+  .closebtn{
+    color:white;
+  }
+
+    /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    margin-top:8vw;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    font-size: 50px;
+  }
+
+  .nav-link{
+    font-size:10vw !important;
+  }
+
+  .active{
+    color:grey !important;
   }
 }
 
@@ -570,6 +722,69 @@ h1[class^="blah"]{
     width:90%;
     margin-left:5%;
   }
+
+  .phoneMenu, .closebtn{
+    display:block;
+    position: fixed;
+    top:3vw;
+    right:4vw;
+    font-size:5vw;
+    width:12%;
+  }
+
+  .closebtn{
+    position: absolute;
+    color:white;
+  }
+
+    /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay a {
+    margin-top:4vh;
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  
+
+  .nav-link{
+    font-size:7vw !important;
+  }
+
+  .active{
+    color:grey !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {  
@@ -647,6 +862,9 @@ h1[class^="blah"]{
 
   .buttonForm:hover{
     transform:scale(1.0);
+  }
+  .overlay a{
+    font-size:3vw !important;
   }
 }
 
